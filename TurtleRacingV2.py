@@ -1,3 +1,5 @@
+# https://trinket.io/python/9604c81609
+
 import turtle, time, random
 r = turtle.Turtle()
 y = turtle.Turtle()
