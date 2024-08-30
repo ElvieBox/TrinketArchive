@@ -1,3 +1,5 @@
+# https://trinket.io/python/48a2e6f5b3
+
 # "Bologna"
 
 class Brain():
