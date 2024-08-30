@@ -1,3 +1,5 @@
+# https://trinket.io/python/4bd96f1fd4
+
 import turtle, random, time
 
 #Notes:
