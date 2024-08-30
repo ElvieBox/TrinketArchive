@@ -1,0 +1,13 @@
+
+Push the Play button right above this
+---------^
+
+When the Turtles are ready to race or just ended a race, select the type-text box
+in the bottom section.
+
+Type in the word "end" to see how many times each turtle won and to stop the program
+Type anything but "end" (this includeds skiping typing completely) and push enter.
+  This should start the race
+
+Each turtle has equal chance to win with a random turtle going a random distance
+                                                                  (with parameters)
