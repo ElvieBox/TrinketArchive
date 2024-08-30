@@ -1,4 +1,5 @@
-# AKA: AI - 6 (The Howies Return)
+# https://trinket.io/python/06c6867e11
+
 "And cook for 10,000 generations or until crispy brown!"
 
 import turtle
