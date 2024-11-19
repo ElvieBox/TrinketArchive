@@ -10,7 +10,7 @@ speed = 15
 steps = 32
 gens = 800
 mutationChance = 25
-pause = 0.5
+pause = 0.05            # suggested .5 for other display types
 display = 'allbests'
 #---------------------------
 """
