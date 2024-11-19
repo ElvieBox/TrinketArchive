@@ -157,7 +157,7 @@ while True:
   
     flappy.goto(0 , flappy.ycor()-acceleration )
   
-    wall.onkey( flap , "Space")
+    wall.onkey( flap , "space")
     wall.listen()
     #time.sleep(.2)
 
