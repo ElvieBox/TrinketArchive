@@ -184,6 +184,7 @@ if display == 'allbests':
         if count >= len(colors):
             count = 0
         displayPath(genes, colors[count], 'path')
+        sleep(pause)
     displayPath(bests[-1], 'black', 'path')
 
 if display == 'best':
