@@ -122,7 +122,7 @@ def mutate(network):
                 message = "!*CHANGE WEIGHT FAIL[empty layer] IN L[" + str(layer) + "]"
             else:
                 neuron = randint(0,len(network[layer])-1)
-                weight = choice(network[layer][neuron]["weights"].keys())
+                weight = choice(list(network[layer][neuron]["weights"].keys()))
                 network[layer][neuron]["weights"][weight] = round(random()*randrange(-1,2,2), 2)
                 message = "*CHANGED WEIGHT[" + weight + "] IN NEURON[" + network[layer][neuron]["id"] + "] IN LAYER[" + str(layer) + "]"
           
@@ -155,7 +155,7 @@ def mutate(network):
                 if len(network[layer][neuron]["weights"]) == 1:
                     message = "!-DELETED WEIGHT FAIL[too few weights] IN NEURON[" + network[layer][neuron]["id"] +"]IN LAYER[" + str(layer) + "]"
                 else:
-                    weight = choice(network[layer][neuron]["weights"].keys())
+                    weight = choice(list(network[layer][neuron]["weights"].keys()))
                     del network[layer][neuron]["weights"][weight]
                     message = "-DELETED WEIGHT[" + weight + "] IN NEURON[" + network[layer][neuron]["id"] + "] IN LAYER[" + str(layer) + "]"
             
