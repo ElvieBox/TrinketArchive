@@ -1,17 +1,23 @@
 # https://trinket.io/python/06c6867e11
 
+# !!!!!!!!!!! EPILEPSY WARNING !!!!!!!!!!
+# Bright flashing colors
+# Can turn to grayscale, but still flashing a little
+
 "And cook for 10,000 generations or until crispy brown!"
 
 import turtle
 from random import randint, choice
 from time import sleep
 
+GRAYSCALE = False                         # !!! EPILEPSY WARNING
+                                          # turn this to True to grayscale it, may or may not help, still flashy, but not as bad
 speed = 15
 steps = 32
 gens = 800
 mutationChance = 25
-pause = 0.05            # suggested .5 for other display types
-display = 'allbests'
+pause = 0.05  
+display = 'individual'      # suggested individual (pause=.05) or allbests (pause=.05)
 #---------------------------
 """
 Speed:   0+   -   How far each point can be from each other
@@ -25,7 +31,10 @@ gen = 0
 count = 0
 howies = []
 bests = []
-colors = ['red', 'orange', 'yellow', 'green', 'blue', 'violet', 'pink', 'turquoise', 'brown']
+if GRAYSCALE:
+    colors = ['#121212', '#141414', '#161616', '#181818', '#1a1a1a', '#1c1c1c', '#1e1e1e', '#212121', '#232323']
+else:
+    colors = ['red', 'orange', 'yellow', 'green', 'blue', 'violet', 'pink', 'turquoise', 'brown']
 
 chances = {
     1: [],
