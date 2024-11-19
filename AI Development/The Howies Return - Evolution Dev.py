@@ -138,13 +138,13 @@ while gen <= gens:
     for howie in howies:
         howie.fitness += howie.endPoint[0]
         while True:
-            if allFits.has_key(howie.fitness):
+            if howie.fitness in allFits:
                 howie.fitness += -1
                 continue
             else:
                 allFits[howie.fitness] = howie
                 break
-    rankedFits = allFits.keys()
+    rankedFits = list(allFits.keys())
     rankedFits.sort(reverse=True)       # large to small
     bests.append([])
     for gene in allFits[rankedFits[0]].genes:
